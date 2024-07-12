@@ -1,132 +1,72 @@
-* {
-    /*border: solid gray 1px;*/
-    font-family: 'Ubuntu Mono';
-    color: #2e2e2e;
+@font-face {
+  font-family: 'OTBulbClassic-200';
+  src: url('OTBulbClassic-200.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OTBulbClassic-500';
+  src: url('OTBulbClassic-200.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OTBulbClassic-900';
+  src: url('OTBulbClassic-900.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OTBulbMonoline-200';
+  src: url('OTBulbMonoline-200.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OTBulbMonoline-500';
+  src: url('OTBulbMonoline-500.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OTBulbMonoline-900';
+  src: url('OTBulbMonoline-900.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OTBulbReverse-200';
+  src: url('OTBulbReverse-200.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OTBulbReverse-500';
+  src: url('OTBulbReverse-500.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'OTBulbReverse-900';
+  src: url('OTBulbReverse-900.otf') format('opentype');
 }
 
 body {
-    box-sizing: border-box;
-    min-width: 320px;
-}
-
-a {
-    font-size: 10px;
-    color: #636363;
-}
-
-img {
-    width: 90px;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-left: 5vw;
-    padding-right: 5vw;
-}
-
-header {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-nav a {
-    font-size: 10px;
+  font-family: OTBulbClassic-500, Arial, sans-serif;
+  box-sizing: border-box;
+  min-width: 320px;
 }
 
 .head_container {
-    background-image: url("pink_background.jpg");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    padding-left: 1rem;
-    mask-image: linear-gradient(to bottom, white 70%, transparent 100%);
+  font-size: 2.5rem;
+  color: rgba(0, 0, 0, 0.804);
+  height: 100vh;
+  background-image: url("pink_background.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+    
 
 }
 
-h1 {
-    padding-top: 5%;
-    margin-bottom: 0;
-    font-size: 1.5rem;
+.head_container div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0.8) 20%, transparent 100%);
 }
 
-h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1.2rem;
-}
-
-h3 {
-    margin-top: 0;
-    margin-bottom: 25%;
-    font-size: 1rem;
-}
-
-main {
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-main section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.nav_buttons {
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav_buttons a {
-    color: #ffffff;
-    font-size: 9px;
-    background-color: rgba(66,4,32,50%);
-    height: 4rem;
-    width: 4rem;
-    border-radius: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 1.9rem;
-}
-
-.skills {
-    margin-top: -2rem;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: bold;
-    width: 95%;
-}
-
-.logos {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.logos img {
-    height: 2rem;
-    width: 2rem;
-}
-
-.skill_labels {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7rem;
-}
-
-main section a {
-    font-size: 1.1rem;
-    background-image: url("pink_background.jpg");
-    background-size: cover;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding: 0.5rem 0.5rem;
-    border-radius: 10px;
-}
